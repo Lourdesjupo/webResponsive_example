@@ -1,0 +1,24 @@
+.article {
+  font-family: $font-main;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    margin-top: 45px;
+    font-family: $font-titles;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 30px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__description {
+    font-size: 1.8rem;
+    text-align: center;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
