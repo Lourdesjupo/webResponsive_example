@@ -1,4 +1,10 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-grey-blue;
+  font-family: $font-main;
+  
+
 }
+
