@@ -1,0 +1,11 @@
+.hamburger{
+    background-color:$burger-blue ;
+    position: fixed;
+    padding: 15px 14px;
+    .icon {
+      color: $white;
+      width: 16px;
+      height: 14px;
+    }
+
+}
