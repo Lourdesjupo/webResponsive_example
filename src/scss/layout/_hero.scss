@@ -20,7 +20,7 @@
     font-family: $font-titles;
     font-weight: bold;
     line-height: 55px;
-    font-size: 42px;
+    font-size: 4.2rem;
     text-transform: uppercase;
     color: $white;
     
@@ -29,6 +29,7 @@
     margin-top: 10px;
     margin-bottom: 45px;
     font-family: $font-main;
+    font-size: 1.6rem;
     color: $white;
     &::first-letter{
       text-transform: uppercase;
@@ -47,7 +48,7 @@
     
   }
   .arrow {
-    font-size: 26px;
+    font-size: 2.6rem;
     color:#f26002;
     // añado tamaño a i para que el texto quede centrado.
     width: 22px;
