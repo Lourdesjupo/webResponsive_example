@@ -1,5 +1,6 @@
 .arrow-link {
   text-decoration: none;
+  transform: translatey(-50%);
 }
 
 .arrow-up {
@@ -9,16 +10,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translatey(-50%);
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   background-color: $white;
   color: $bright-orange;
 }
 
 .menu {
+  margin-top: 15px;
   &__list {
-    list-style-type: none;
     line-height: 30px;
+    list-style-type: none;
+    
   }
   &__ul {
     display: flex;
@@ -45,11 +47,15 @@
 }
 
 .copy {
+  margin-bottom: 45px;
   font-family: $font-main;
-  font-size: 2rem;
   color: $white;
   line-height: 30px;
   text-align: center;
+  &__year,&__text{
+    font-size: 1.4rem;
+    
+  }
   .heart {
     color: $bright-orange;
   }
