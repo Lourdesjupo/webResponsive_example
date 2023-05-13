@@ -6,50 +6,61 @@
   display: flex;
   flex-direction: column;
 
-
   &__text {
-      margin: $margin-horizontal;
-      margin-top: 284px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+    margin: $margin-horizontal;
+    margin-top: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-  &__title{
+  &__title {
     font-family: $font-titles;
     font-weight: bold;
     line-height: 55px;
     font-size: 4.2rem;
     text-transform: uppercase;
     color: $white;
-    
+    @include tablet() {
+      font-size: 8rem;
+      line-height: 106px;
+    }
+    @include desktop() {
+      font-size: 10rem;
+      line-height: 132px;
+    }
   }
-  &__description{
+  &__description {
     margin-top: 10px;
     margin-bottom: 45px;
     font-family: $font-main;
     font-size: 1.6rem;
     color: $white;
-    &::first-letter{
+    &::first-letter {
       text-transform: uppercase;
+    }
+     @include tablet() {
+      font-size: 2.4rem;
+    }
+    @include desktop() {
+      font-size: 2.4rem;
     }
   }
 
   &__link {
     width: 45px;
     height: 45px;
-    background-color:$white;
+    background-color: $white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
   }
   .arrow {
     font-size: 2.6rem;
-    color:#f26002;
+    color: #f26002;
     // añado tamaño a i para que el texto quede centrado.
     width: 22px;
     height: 22px;
