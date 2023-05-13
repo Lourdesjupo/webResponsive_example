@@ -1,42 +1,62 @@
 .principal {
-  font-family:$font-main ;
+  font-family: $font-main;
   margin: $margin-horizontal;
 
   &__tag {
-    margin-top:30px;
+    margin-top: 30px;
     font-size: 1.4rem;
-    line-height: 3.0rem;
+    line-height: 3rem;
     text-transform: capitalize;
-    color:$lightblue;
+    color: $lightblue;
   }
-  &__title{
-  font-family: $font-titles;
-  font-weight: bold;
-  font-size: 2.4rem;
-  text-transform: capitalize;
+  &__title {
+    font-family: $font-titles;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    @include tablet() {
+      font-size: 2.6rem;
+      line-height: 45px;
+    }
+    @include desktop() {
+      font-size: 3.2rem;
+      line-height: 45px;
+    }
   }
   &__description {
-    margin-top:15px;
-    font-size:1.8rem;
+    margin-top: 15px;
+    font-size: 1.8rem;
     line-height: 30px;
-    color:$greyish-brown;
+    color: $greyish-brown;
+    @include tablet() {
+      font-size: 2rem;
+      line-height: 30px;
+    }
   }
   &__btn {
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 45px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 76px;
     height: 45px;
-    border-radius:25px;
-    border:2px solid $bright-orange;
+    border-radius: 25px;
+    border: 2px solid $bright-orange;
     text-decoration: none;
-    color:$bright-orange;
-    font-size: 2.0rem;
+    color: $bright-orange;
+    font-size: 2rem;
     text-align: center;
     &:hover {
       background-color: $dark-grey-blue;
+    }
+    @include tablet() {
+      width: 91px;
+      height: 45px;
+    }
+    @include tablet() {
+      width: 160px;
+      height: 45px;
     }
   }
 }
