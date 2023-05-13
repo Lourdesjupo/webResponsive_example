@@ -5,6 +5,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 
   &__text {
     margin: $margin-horizontal;
@@ -13,6 +14,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @include tablet() {
+      margin-top: 300px;
+      margin-left: 39px;
+      margin-right: 39px;
+    }
+    @include desktop() {
+      margin-top: 300px;
+      margin-left: 275px;
+      margin-right: 275px;
+    }
   }
 
   &__title {
@@ -25,6 +36,7 @@
     @include tablet() {
       font-size: 8rem;
       line-height: 106px;
+
     }
     @include desktop() {
       font-size: 10rem;
@@ -40,11 +52,16 @@
     &::first-letter {
       text-transform: uppercase;
     }
-     @include tablet() {
+    @include tablet() {
       font-size: 2.4rem;
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
     @include desktop() {
       font-size: 2.4rem;
+      margin: $margin-horizontal-desktop;
+      margin-top: 0px;
+      margin-bottom: 30px;
     }
   }
 
