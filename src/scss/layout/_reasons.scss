@@ -34,11 +34,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.0rem ;
     text-decoration: none;
-    font-family: $font-main;
+    &--text {
+      font-size: 2.0rem ;
+      font-family: $font-main;      
+      &::first-letter{
+        text-transform: uppercase;
+      }
+    }
       &:hover{
         background-color: $dark-grey-blue;
       }
   }
 }
+    
+
