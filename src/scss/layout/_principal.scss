@@ -1,7 +1,14 @@
 .principal {
   font-family: $font-main;
   margin: $margin-horizontal;
-
+  @include tablet() {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+  @include desktop() {
+    margin-left: 275px;
+    margin-right: 275px;
+  }
   &__tag {
     margin-top: 30px;
     font-size: 1.4rem;
@@ -31,6 +38,7 @@
     @include tablet() {
       font-size: 2rem;
       line-height: 30px;
+      margin-top: 30px;
     }
   }
   &__btn {
