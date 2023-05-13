@@ -74,6 +74,10 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    &:hover {
+        transform: translateY(20%);
+      }
+
   }
   .arrow {
     font-size: 2.6rem;

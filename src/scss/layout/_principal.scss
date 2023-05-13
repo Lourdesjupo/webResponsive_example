@@ -35,6 +35,7 @@
     font-size: 1.8rem;
     line-height: 30px;
     color: $greyish-brown;
+
     @include tablet() {
       font-size: 2rem;
       line-height: 30px;
