@@ -2,7 +2,11 @@
   background-color: $ice-blue;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto;
+  @include tablet(){
+      grid-template-columns: repeat(1,auto) ;
+      grid-template-rows:auto auto auto;
+  }
 
   &__text {
     margin-top: 30px;
@@ -11,41 +15,64 @@
     text-align: center;
     text-transform: capitalize;
     font-family: $font-titles;
+    @include tablet() {
+      grid-column: auto;
+    }
   }
+  
   
 }
 .articles {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 70px;
   margin-right: 70px;
-  &__btn {
-    margin-top: 45px;
-    margin-bottom: 60px;
-    width: 184px;
-    height: 45px;
-    border-radius: 22.5px;
-    color:$white;
-    background-color: $bright-orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    &--text {
-      font-size: 2.0rem ;
-      font-family: $font-main;      
-      &::first-letter{
-        text-transform: uppercase;
+
+  @include tablet() {
+  margin-left: 0px;
+  margin-right: 0px;
+  grid-row:auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 45px;
+  margin-bottom: 60px;
+  }
+
+}
+ .articles-btn {
+display: flex;
+justify-content: center;
+    @include tablet() {
+        margin-left: 0px;
+        margin-right: 0px;
+        grid-row: 4/5;
+
       }
+&__btn {
+  margin-top: 45px;
+  margin-bottom: 60px;
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  color: $white;
+  background-color: $bright-orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &--text {
+    font-size: 2.0rem;
+    font-family: $font-main;
+
+    &::first-letter {
+      text-transform: uppercase;
     }
-      &:hover{
-        background-color: $dark-grey-blue;
-      }
+  }
+
+  &:hover {
+    background-color: $dark-grey-blue;
   }
 }
-    
-
+ }
