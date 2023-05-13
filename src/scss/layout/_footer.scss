@@ -1,31 +1,60 @@
-.arrow-link {
-  text-decoration: none;
-  transform: translatey(-50%);
-}
-
-.arrow-up {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+.arrow {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 2.8rem;
-  background-color: $white;
-  color: $bright-orange;
+  &__link {
+    text-decoration: none;
+    transform: translatey(-50%);
+  }
+
+  &__up {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    background-color: $white;
+    color: $bright-orange;
+  }
+}
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  @include tablet() {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @include desktop() {
+    justify-content: center;
+  }
 }
 
 .menu {
   margin-top: 15px;
+  @include tablet() {
+    order: 1;
+    margin-bottom: 45px;
+    margin-top: 0px;
+  }
+  @include desktop() {
+    order: 1;
+    margin-right: 30px;
+    width: 161px;
+  }
+
   &__list {
     line-height: 1.88;
     list-style-type: none;
-    
   }
   &__ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet() {
+      align-items: flex-start;
+    }
   }
 
   &__link,
@@ -44,6 +73,11 @@
 .rrss {
   margin-top: 30px;
   margin-bottom: 30px;
+  @include tablet() {
+    order: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .copy {
@@ -52,9 +86,16 @@
   color: $white;
   line-height: 30px;
   text-align: center;
-  &__year,&__text{
+  @include tablet() {
+    text-align: left;
+  }
+  @include desktop() {
+    width: 159px;
+    margin-right: 31px;
+  }
+  &__year,
+  &__text {
     font-size: 1.4rem;
-    
   }
   .heart {
     color: $bright-orange;
