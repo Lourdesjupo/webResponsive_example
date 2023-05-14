@@ -1,15 +1,13 @@
-.hamburger{
-    background-color:$burger-blue ;
-    position: fixed;
-    width: 44px;
-    height: 44px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    .icon {
-
-      color: $white;
-      font-size: 1.8rem;
-    }
-
+.hamburger {
+  background-color: $burger-blue;
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    color: $white;
+    font-size: 1.8rem;
+  }
 }

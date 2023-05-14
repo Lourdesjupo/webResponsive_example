@@ -5,25 +5,14 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
 
   &__text {
     margin: $margin-horizontal;
-    margin-top: 284px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    @include tablet() {
-      margin-top: 300px;
-      margin-left: 39px;
-      margin-right: 39px;
-    }
-    @include desktop() {
-      margin-top: 300px;
-      margin-left: 275px;
-      margin-right: 275px;
-    }
   }
 
   &__title {
@@ -34,11 +23,12 @@
     text-transform: uppercase;
     color: $white;
     @include tablet() {
+      width: 690px;
       font-size: 8rem;
       line-height: 106px;
-
     }
     @include desktop() {
+      width: 730px;
       font-size: 10rem;
       line-height: 132px;
     }
@@ -53,36 +43,43 @@
       text-transform: uppercase;
     }
     @include tablet() {
-      font-size: 2.4rem;
+      width: 360px;
       margin-top: 20px;
       margin-bottom: 30px;
+      font-size: 2.4rem;
     }
     @include desktop() {
-      font-size: 2.4rem;
-      margin: $margin-horizontal-desktop;
+      width: 730px;
       margin-top: 0px;
       margin-bottom: 30px;
+      font-size: 2.4rem;
     }
   }
 
   &__link {
     width: 45px;
     height: 45px;
-    background-color: $white;
-    border-radius: 50%;
+    margin-bottom: 53px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
     text-decoration: none;
+    background-color: $white;
     &:hover {
-        transform: translateY(20%);
-      }
+      transform: translateY(20%);
+    }
+    @include tablet() {
+      margin-bottom: 45px;
+    }
 
+    @include desktop() {
+      margin-bottom: 30px;
+    }
   }
   .arrow {
     font-size: 2.6rem;
     color: #f26002;
-    // añado tamaño a i para que el texto quede centrado.
     width: 22px;
     height: 22px;
   }

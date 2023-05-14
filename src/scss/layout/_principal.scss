@@ -36,6 +36,21 @@
     line-height: 30px;
     color: $greyish-brown;
 
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    &--capitalize {
+      display: inline-block;
+      font-size: 1.8rem;
+      line-height: 30px;
+      color: $greyish-brown;
+      &::first-letter {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+
     @include tablet() {
       font-size: 2rem;
       line-height: 30px;
@@ -43,15 +58,15 @@
     }
   }
   &__btn {
+    width: 76px;
+    height: 45px;
     margin-top: 30px;
     margin-bottom: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 76px;
-    height: 45px;
-    border-radius: 25px;
     border: 2px solid $bright-orange;
+    border-radius: 25px;
     text-decoration: none;
     color: $bright-orange;
     font-size: 2rem;
