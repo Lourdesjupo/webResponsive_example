@@ -17,9 +17,9 @@ Este ejercicio consiste en crear una página web responsive basada en un diseño
 
 ## Puntos Claves
 
-✅ Diseño mobile first  
-✅ FlexBox y CSS grid
-✅ Uso de media queries
+✅ Diseño mobile first    
+✅ FlexBox y CSS grid    
+✅ Uso de media queries    
 
 ## Especificaciones del ejercicio
 
