@@ -2,7 +2,7 @@
 
 Este ejercicio consiste en crear una página web responsive basada en un diseño proporcionado. 
 
-[Ver proyecto](https://lourdesjupo.github.io/webResponsive_example/)
+[Ver ejercicio](https://lourdesjupo.github.io/webResponsive_example/)
 
 ![image](https://github.com/Lourdesjupo/webResponsive_example/assets/126502912/e130d40d-eb71-41b6-b91b-96f71b039a75)
 
